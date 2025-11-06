@@ -1,4 +1,7 @@
-# LCAC Benchmark
+<div align="center">
+  <h1>LCAC Benchmark</h1>
+  <p><em>Least-Context Access Control • Cognitive Integrity Evaluation Suite</em></p>
+</div>
 
 **LCAC Benchmark** - *Least-Context Access Control Benchmark* - is a public evaluation framework for measuring **reasoning integrity**, **drift resistance**, and **cognitive trust** in AI systems.
 
