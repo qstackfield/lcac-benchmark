@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LCAC Benchmark Client.
+LCAC Benchmark Client
 ---------------------
 Lightweight open-source client for running local LCAC reasoning benchmarks.
 Generates a JSON file compatible with `spec/lcac_metrics_schema.json`.
