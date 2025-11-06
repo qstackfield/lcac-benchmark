@@ -272,4 +272,43 @@ Participants gain a **verifiable reasoning integrity profile**, suitable for cit
 **Organization:** Atom Labs - LCAC Research Division 
 **Contact:** qstackfield@seedcore.io  
 
+---
+
+## Benchmark Architecture Overview
+
+```text
+┌────────────────────────────┐
+│    Participant Model / AI  │
+│   (reasoning engine under  │
+│       evaluation)          │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ LCAC Benchmark Client      │
+│ - Runs drift & stability   │
+│ - Outputs JSON metrics     │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ Schema Validator           │
+│ - Ensures JSON compliance  │
+│ - Confirms trust index     │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ Submission Path            │
+│ - Public PR → /participants│
+│ - Private email → review   │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ LCAC Leaderboard Generator │
+│ - Aggregates verified runs │
+│ - Publishes Trust Index    │
+└────────────────────────────┘
+
 
