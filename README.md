@@ -342,7 +342,7 @@ Participants gain a **verifiable reasoning integrity profile**, suitable for cit
 ## Community Q&A and Discussions
 
 LCAC Benchmark now supports open Q&A and research discussions directly on GitHub.  
-You can use **GitHub Discussions** to ask questions, share results, or collaborate on integration improvements - no email required.
+You can use **GitHub Discussions** to ask questions, share results, or collaborate on integration improvements - No email required.
 
 ### Discussion Categories
 
