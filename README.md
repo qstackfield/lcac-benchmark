@@ -73,19 +73,6 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.json)
 
 ---
----
-
-## Quickstart (60s)
-
-Run a full LCAC benchmark locally and validate your output:
-
-```bash
-git clone https://github.com/qstackfield/lcac-benchmark
-cd lcac-benchmark/client
-pip install -r requirements.txt
-python3 lcac_benchmark_client.py --model example-model-v1
-python3 client/validate_lcac_result.py $(ls results/lcac_benchmark_*.json | tail -n 1)
----
 
 ## Developer & Tester Guide
 
