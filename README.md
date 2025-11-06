@@ -1,13 +1,19 @@
 <div align="center">
-  <h1>LCAC Benchmark</h1>
-  <p><em>Least-Context Access Control • Cognitive Integrity Evaluation Suite</em></p>
-</div>
+
+# 🧠 LCAC Benchmark  
+### *Least-Context Access Control · Cognitive Integrity Evaluation Suite*
+
 [![License: LCAC Research](https://img.shields.io/badge/license-LCAC%20Research-blue.svg)](LICENSE)
 [![Benchmark Status](https://img.shields.io/badge/status-open--benchmark-green)](#)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](#institutional-testing)
-**LCAC Benchmark** - *Least-Context Access Control Benchmark* - is a public evaluation framework for measuring **reasoning integrity**, **drift resistance**, and **cognitive trust** in AI systems.
 
-It provides a reproducible methodology for testing how well a model maintains logical consistency, contextual alignment, and truth-preserving reasoning over time.
+**LCAC Benchmark** is a public evaluation framework for measuring  
+**reasoning integrity**, **drift resistance**, and **cognitive trust** in AI systems.
+
+It provides a reproducible methodology for testing how well a model maintains  
+logical consistency, contextual alignment, and truth-preserving reasoning over time.
+
+</div>
 
 ---
 [![License: LCAC Research](https://img.shields.io/badge/license-LCAC%20Research-blue.svg)](LICENSE)
