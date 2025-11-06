@@ -1,97 +1,73 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "LCAC Benchmark Result Schema",
-  "description": "Defines the standard structure for LCAC benchmark results measuring reasoning drift, stability, and trust index integrity.",
+  "title": "LCAC Benchmark Metrics Schema",
+  "description": "Schema for LCAC reasoning integrity, drift resistance, and cognitive trust benchmark outputs.",
   "type": "object",
-  "required": [
-    "timestamp",
-    "model",
-    "participant",
-    "benchmark_version",
-    "metrics",
-    "trust_index",
-    "verdict"
-  ],
   "properties": {
     "timestamp": {
       "type": "string",
       "format": "date-time",
-      "description": "UTC ISO-8601 timestamp when the benchmark completed."
+      "description": "UTC ISO-8601 timestamp of benchmark completion."
     },
     "model": {
       "type": "string",
-      "description": "Name or identifier of the reasoning model or engine being tested."
+      "description": "Name or identifier of the model, engine, or reasoning system tested."
     },
     "participant": {
       "type": "string",
-      "description": "Institution, organization, or participant submitting this benchmark result."
+      "description": "Organization, team, or benchmark participant identifier."
     },
     "benchmark_version": {
       "type": "string",
-      "description": "Version of the LCAC benchmark suite or Git commit hash used during evaluation."
+      "description": "Version of the LCAC benchmark or Git commit hash."
     },
     "metrics": {
       "type": "object",
-      "description": "Quantitative reasoning performance metrics.",
-      "required": ["drift_mean", "drift_std", "stability", "latency_mean", "latency_std"],
+      "description": "Benchmark metrics collected from reasoning evaluation cycles.",
       "properties": {
         "drift_mean": {
           "type": "number",
-          "description": "Average reasoning drift magnitude across test cycles."
+          "description": "Average drift magnitude across test intervals."
         },
         "drift_std": {
           "type": "number",
-          "description": "Standard deviation of reasoning drift across iterations."
+          "description": "Standard deviation of drift across evaluations."
         },
-        "stability": {
+        "stability_mean": {
           "type": "number",
-          "description": "Mean stability score of logical and contextual consistency (0–1).",
-          "minimum": 0,
-          "maximum": 1
+          "description": "Mean stability score of reasoning output consistency."
+        },
+        "stability_std": {
+          "type": "number",
+          "description": "Standard deviation of stability across tests."
         },
         "latency_mean": {
           "type": "number",
-          "description": "Average response latency observed during evaluation (seconds)."
+          "description": "Average reasoning latency (seconds)."
         },
         "latency_std": {
           "type": "number",
-          "description": "Standard deviation of response latency."
+          "description": "Standard deviation of reasoning latency."
+        },
+        "trust_index": {
+          "type": "number",
+          "description": "Composite trust index combining drift and stability (0–1).",
+          "minimum": 0,
+          "maximum": 1
         }
-      }
-    },
-    "trust_index": {
-      "type": "number",
-      "description": "Derived composite trust index combining stability and drift metrics (0–1).",
-      "minimum": 0,
-      "maximum": 1
+      },
+      "required": ["drift_mean", "stability_mean", "trust_index"]
     },
     "verdict": {
       "type": "string",
       "enum": ["Stable / High Trust", "Monitor Drift", "Unstable / Low Trust"],
-      "description": "Qualitative classification of benchmark result based on reasoning integrity."
+      "description": "Final qualitative assessment of model reasoning integrity."
     },
-    "meta": {
-      "type": "object",
-      "description": "Supplementary metadata about the benchmark environment.",
-      "properties": {
-        "samples": {
-          "type": "integer",
-          "description": "Number of reasoning samples evaluated."
-        },
-        "environment": {
-          "type": "string",
-          "description": "Environment label (e.g., local, CI/CD, research, production)."
-        },
-        "runtime": {
-          "type": "string",
-          "description": "Execution runtime identifier (e.g., Python3)."
-        },
-        "lcac_suite": {
-          "type": "string",
-          "description": "Suite name or test group (e.g., open, institutional, enterprise)."
-        }
-      }
+    "notes": {
+      "type": "string",
+      "description": "Optional metadata or annotations about runtime or context."
     }
   },
+  "required": ["timestamp", "model", "participant", "metrics", "verdict"],
   "additionalProperties": false
 }
