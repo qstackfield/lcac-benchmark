@@ -15,7 +15,6 @@ logical consistency, contextual alignment, and truth-preserving reasoning over t
 
 </div>
 
-
 > **Note:** This repository is part of the LCAC Open Benchmark Series — a public reasoning integrity standard maintained by Atom Labs.
 ---
 ## What It Measures
