@@ -303,7 +303,9 @@ It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, 
 └────────────────────────────┘
 ```
 
-### How Participants Use It
+---
+
+## How Participants Use It
 
 1. **Run Locally**  
    Fork this repository and execute the LCAC benchmark client against your own reasoning system or model.  
@@ -313,29 +315,50 @@ It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, 
    Use the included validator to confirm your output JSON meets the LCAC schema standard.  
    Validation ensures comparability and auditability across participants.
 
-3. **Submit for Verification**  
-   - **Public Path:** open a Pull Request adding your JSON to `/results/participants/`  
-   - **Private Path:** email your validated result or its SHA-256 hash to  
-     **qstackfield@seedcore.io**
+3. **Submit for Verification**
 
-   Every verified submission is signed and listed on the **LCAC Public Leaderboard**, ranked by the model’s `trust_index`.
+   - **Public Path:** open a Pull Request adding your validated JSON to  
+     `/results/participants/`
+   - **Private Path:** open a **Private Submission Issue** and include your  
+     model name, organization, and the SHA-256 hash of your JSON result.  
+     *(No email or raw data required.)*
 
-4. **Interpret Your Score**  
+   Every verified submission is signed and listed on the **LCAC Public Leaderboard**,  
+   ranked by the model’s `trust_index`.
+
+4. **Interpret Your Score**
    - High `trust_index` → consistent reasoning and low drift  
    - Moderate → observable contextual drift, recommend tuning  
    - Low → unstable or hallucination-prone reasoning under context variation
 
-### Why It Matters
+---
 
-LCAC is part of an emerging integrity layer for AI. 
-A neutral benchmark for **reasoning governance**.  
-By standardizing cognitive stability metrics, LCAC enables:
+## Contributing to LCAC Benchmark
 
-- Transparent comparison between reasoning systems  
-- Verifiable trust-index certification  
-- Institutional confidence in autonomous or decision-support AI
+Thank you for contributing to the LCAC Benchmark initiative.  
+This project is open for research collaboration, community testing, and integrity governance.
 
-Participants gain a **verifiable reasoning integrity profile**, suitable for citation, internal QA, or public disclosure on the LCAC leaderboard.
+### Scope
+LCAC is intended for **academic, research, and institutional integrity testing.**  
+It measures reasoning consistency, drift resistance, and cognitive trust.
+
+### Guidelines
+- Submit reproducible results with clear model identifiers.  
+- No proprietary, personal, or confidential data should be uploaded.  
+- For private model evaluations, open a **Private Submission Issue** instead of sharing files.  
+- All contributions must align with the **LCAC Research License** terms.
+
+---
+
+## Purpose & Usage
+
+The **LCAC Benchmark** provides a reproducible way for researchers, engineers, and institutions  
+to evaluate **reasoning integrity** — how well a model maintains logical stability, context alignment,  
+and truth-preserving behavior over time.
+
+It is not a dataset or a training framework.  
+It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, *cognitive trust*,  
+and *context retention* using standardized metrics.
 
 ---
 
