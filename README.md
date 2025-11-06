@@ -90,13 +90,18 @@ and inclusion in the **LCAC Global Benchmark Leaderboard**.
 
 ---
 
-## LCAC Participant Submission Template
-- **Organization:**  
-- **Model / Engine Name:**  
-- **Test Date:**  
-- **Benchmark Version:**  
-- **Result File:** `lcac_benchmark_[timestamp].json`
-- **Notes / Special Conditions:**  
+# LCAC Participant Submission Template
+
+Please include this information with your submission or Pull Request.
+
+| Field | Description |
+|-------|--------------|
+| **Organization** | Your company, lab, or research group name |
+| **Model / Engine Name** | The name or identifier of the model tested |
+| **Test Date** | Date of the benchmark execution |
+| **Benchmark Version** | LCAC Benchmark version or Git commit hash |
+| **Result File** | `lcac_benchmark_[timestamp].json` |
+| **Notes / Special Conditions** | Optional comments, hardware details, or runtime context |
 
 ## Citation
 
