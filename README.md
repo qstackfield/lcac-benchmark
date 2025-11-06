@@ -244,29 +244,29 @@ It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, 
               ▼
 ┌────────────────────────────┐
 │ LCAC Benchmark Client      │
-│ - Runs drift & stability   │
-│ - Outputs JSON metrics     │
+│   Runs drift & stability   │
+│   Outputs JSON metrics     │
 └─────────────┬──────────────┘
               │
               ▼
 ┌────────────────────────────┐
 │ Schema Validator           │
-│ - Ensures JSON compliance  │
-│ - Confirms trust index     │
+│   Ensures JSON compliance  │
+│   Confirms trust index     │
 └─────────────┬──────────────┘
               │
               ▼
 ┌────────────────────────────┐
 │ Submission Path            │
-│ - Public PR → /participants│
-│ - Private email → review   │
+│   Public PR → /participants│
+│   Private email → review   │
 └─────────────┬──────────────┘
               │
               ▼
 ┌────────────────────────────┐
 │ LCAC Leaderboard Generator │
-│ - Aggregates verified runs │
-│ - Publishes Trust Index    │
+│   Aggregates verified runs │
+│   Publishes Trust Index    │
 └────────────────────────────┘
 ```
 
