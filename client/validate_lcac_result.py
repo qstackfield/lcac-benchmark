@@ -1,66 +1,97 @@
 #!/usr/bin/env python3
 """
-LCAC Benchmark Result Validator
---------------------------------
-Validates benchmark result files against the official LCAC schema.
+LCAC Benchmark Client
+----------------------
+Generates LCAC-compliant benchmark results for reasoning systems.
 
 Usage:
-    python3 validate_lcac_result.py path/to/lcac_benchmark_[timestamp].json
+    python3 client/lcac_benchmark_client.py [--model MODEL_NAME]
+
+Environment:
+    LCAC_MODEL_NAME   Optional. Overrides the model name in metadata.
+
+Outputs:
+    results/lcac_benchmark_[timestamp].json
 """
 
-import sys
+import os
 import json
+import random
 import pathlib
-from jsonschema import validate, ValidationError
+from datetime import datetime, timezone
 
-SCHEMA_PATH = pathlib.Path(__file__).parent.parent / "spec" / "lcac_metrics_schema.json"
+# Output directory
+OUT_DIR = pathlib.Path("results")
+OUT_DIR.mkdir(exist_ok=True)
 
-def load_json(path):
-    try:
-        with open(path, "r") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"[✗] Error reading JSON file: {e}")
-        sys.exit(1)
+def simulate_metrics():
+    """
+    Simulate drift, stability, and trust metrics.
+    Replace this with real model evaluation logic.
+    """
+    drift_values = [random.uniform(0.01, 0.03) for _ in range(50)]
+    stability_values = [random.uniform(0.95, 0.99) for _ in range(50)]
 
-def load_schema():
-    try:
-        with open(SCHEMA_PATH, "r") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"[✗] Error loading LCAC schema: {e}")
-        sys.exit(1)
+    drift_mean = round(sum(drift_values) / len(drift_values), 4)
+    drift_std = round((max(drift_values) - min(drift_values)) / 2, 4)
+    stability = round(sum(stability_values) / len(stability_values), 4)
+    return drift_mean, drift_std, stability
 
-def validate_result(result_path):
-    data = load_json(result_path)
-    schema = load_schema()
 
-    print(f"\n🔍 Validating {result_path} against LCAC schema...\n")
+def build_result(model_name, version, drift_mean, drift_std, stability):
+    """
+    Build LCAC result object that matches schema.
+    """
+    trust_index = round((1 - drift_mean) * stability, 3)
+    verdict = "Stable / High Trust" if stability > 0.9 and drift_mean < 0.05 else "Moderate / Needs Review"
 
-    try:
-        validate(instance=data, schema=schema)
-        print("✅ Validation successful — LCAC result file is valid and complete.\n")
-        print(json.dumps(data, indent=2))
-    except ValidationError as e:
-        print(f"❌ Validation failed:\n\n{e.message}\n")
-        print(f"At: {' → '.join(str(x) for x in e.path)}\n")
-        sys.exit(1)
+    return {
+        "timestamp": datetime.utcnow().replace(tzinfo=timezone.utc).isoformat(),
+        "model": model_name,
+        "benchmark_version": version,
+        "metrics": {
+            "drift_mean": drift_mean,
+            "drift_std": drift_std,
+            "stability": stability,
+            "trust_index": trust_index
+        },
+        "verdict": verdict
+    }
+
+
+def save_result(result):
+    """
+    Save benchmark result as JSON.
+    """
+    ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    out_file = OUT_DIR / f"lcac_benchmark_{ts}.json"
+    with open(out_file, "w") as f:
+        json.dump(result, f, indent=2)
+    return out_file
+
+
+def main():
+    print("🚀 Starting LCAC Benchmark (Open Suite)...\n")
+
+    # Model + version metadata
+    model_name = os.getenv("LCAC_MODEL_NAME", "example-model-v1")
+    version = "v1.0.0"
+
+    # Simulate or collect real metrics
+    drift_mean, drift_std, stability = simulate_metrics()
+
+    # Build LCAC result payload
+    result = build_result(model_name, version, drift_mean, drift_std, stability)
+
+    # Save it
+    out_file = save_result(result)
+
+    # Console summary
+    print(f"✅ Benchmark complete — result saved to {out_file}")
+    print(f"📊 Drift: {drift_mean:.4f} | Stability: {stability:.4f}")
+    print(f"🧠 Verdict: {result['verdict']}")
+    print(f"\nNext → Validate your result:\npython3 client/validate_lcac_result.py {out_file}\n")
+
 
 if __name__ == "__main__":
-    results_dir = pathlib.Path("results")
-    files = sorted(results_dir.glob("lcac_benchmark_*.json"))
-    if len(sys.argv) < 2:
-        if files:
-            result_path = files[-1]
-            print(f"[i] No file provided — validating latest: {result_path}")
-        else:
-            print("[✗] No LCAC result files found in results/")
-            sys.exit(1)
-    else:
-        result_path = pathlib.Path(sys.argv[1])
-
-    if not result_path.exists():
-        print(f"[✗] File not found: {result_path}")
-        sys.exit(1)
-
-    validate_result(result_path)
+    main()
