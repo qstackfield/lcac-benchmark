@@ -90,7 +90,7 @@ results/lcac_benchmark_20251106T190000Z.json
     Upload your JSON file via the [Institutional Access Portal](ACCESS.md)  
     to receive an official LCAC trust-index signature.
 
-   ## Output Schema (Simplified)
+## Output Schema (Simplified)
 
 {
   "timestamp": "2025-11-06T15:00:00Z",
