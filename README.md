@@ -207,7 +207,24 @@ Approved participants receive:
 
 Released under the **LCAC Research License (Academic / Non-Commercial)**.  
 Commercial use, redistribution, or derivative works require prior written approval.  
-Contact: qstackfield@seedcore.io
+
+For licensing or institutional inquiries, please open a **License Request Issue**  
+or start a discussion in [LCAC Discussions](../../discussions).
+
+---
+
+## Institutional Testing
+
+To participate in LCAC institutional or enterprise testing:
+
+1. **Fork this repository** to create your local copy.  
+2. **Run the benchmark suite** against your internal or public reasoning models.  
+3. **Submit your result file** (`lcac_benchmark_[timestamp].json`) via one of the following:
+   - Pull Request to `/results/participants`
+   - or open a **Private Submission Issue**
+
+Approved institutions receive a **signed Trust-Index Certificate**  
+and inclusion in the **LCAC Global Benchmark Leaderboard**.
 
 ## Institutional Testing
 
