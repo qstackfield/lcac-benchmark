@@ -209,7 +209,8 @@ Released under the **LCAC Research License (Academic / Non-Commercial)**.
 Commercial use, redistribution, or derivative works require prior written approval.  
 
 For licensing or institutional inquiries, please open a **License Request Issue**  
-or start a discussion in [LCAC Discussions](../../
+or start a discussion in [LCAC Discussions](../../discussions).
+
 ## Institutional Testing
 
 To participate in LCAC institutional or enterprise testing:
