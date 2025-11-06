@@ -338,12 +338,41 @@ By standardizing cognitive stability metrics, LCAC enables:
 Participants gain a **verifiable reasoning integrity profile**, suitable for citation, internal QA, or public disclosure on the LCAC leaderboard.
 
 ---
-## Community & Submissions
 
-- For questions, use [GitHub Discussions](../../discussions)
-- For public submissions, fork and open a PR
-- For private results, open an issue using the **Private Submission** template
+## Community Q&A and Discussions
 
+LCAC Benchmark now supports open Q&A and research discussions directly on GitHub.  
+You can use **GitHub Discussions** to ask questions, share results, or collaborate on integration improvements — no email required.
+
+### Discussion Categories
+
+| Category | Purpose |
+|-----------|----------|
+| [Questions & Help](../../discussions/categories/questions-help) | Get assistance setting up or running the LCAC Benchmark |
+| [Benchmark Results](../../discussions/categories/benchmark-results) | Share your model scores and reasoning stability results |
+| [Integrations & Tools](../../discussions/categories/integrations-tools) | Discuss frameworks, connectors, or new testing modules |
+
+### Submitting Results or Files
+
+- For **public results**, open a Pull Request adding your JSON to `/results/participants/`.
+- For **private or NDA results**, create a **Private Submission Issue** and include your model name and SHA-256 hash (no raw data required).
+
+### Participation Guidelines
+
+- Keep discussions technical and benchmark-focused.  
+- Do not share proprietary model weights or data.  
+- Verified contributors will receive a **Trust-Index Certificate** after validation.
+
+---
+
+ **Start a Discussion:**  
+ [Join the LCAC Discussions](../../discussions)
+
+---
+
+**Maintainer:** [@qstackfield](https://github.com/qstackfield)  
+**Organization:** Atom Labs – LCAC Research Division  
+**Contact:** qstackfield@seedcore.io
 ## Footer
 
 **Maintainer:** [@qstackfield](https://github.com/qstackfield)  
