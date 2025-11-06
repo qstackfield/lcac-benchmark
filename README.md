@@ -35,6 +35,8 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 You can connect **any reasoning model** (local or API-based) to the LCAC Benchmark client.  
 The client simply expects a function that accepts a text prompt and returns a model response.
 
+Each model integration only needs to implement a single query_model() function. The LCAC client handles all evaluation loops automatically.
+
 #### **Option 1 - Local model (Hugging Face / custom)**
 
 ```python
