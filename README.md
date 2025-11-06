@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 LCAC Benchmark  
+# LCAC Benchmark  
 ### *Least-Context Access Control · Cognitive Integrity Evaluation Suite*
 
 [![License: LCAC Research](https://img.shields.io/badge/license-LCAC%20Research-blue.svg)](LICENSE)
