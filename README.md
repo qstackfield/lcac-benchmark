@@ -54,6 +54,7 @@ The client simply expects a function that accepts a text prompt and returns a mo
 #### **Option 1 - Local model (Hugging Face / custom)**
 
 \```python
+
 # Edit lcac_benchmark_client.py
 from transformers import pipeline
 
@@ -61,6 +62,7 @@ model = pipeline("text-generation", model="gpt2")
 
 def query_model(prompt: str) -> str:
     return model(prompt, max_new_tokens=100)[0]["generated_text"]
+    
 \```
 
 #### **Option 2 - API model (OpenAI / Anthropic / Gemini)**
