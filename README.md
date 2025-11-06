@@ -203,8 +203,9 @@ Approved participants receive:
 }
 ```
 
-## License
+---
 
+## License
 Released under the **LCAC Research License (Academic / Non-Commercial)**.  
 Commercial use, redistribution, or derivative works require prior written approval.  
 
