@@ -139,9 +139,9 @@ results/lcac_benchmark_20251106T150435Z.json
 ```
 
 Each run measures:
-- **drift_avg / drift_std** — signal variance across reasoning cycles  
-- **stability_avg / stability_std** — context alignment over time  
-- **latency_avg / latency_std** — processing speed stability  
+- **drift_avg / drift_std** - signal variance across reasoning cycles  
+- **stability_avg / stability_std** - context alignment over time  
+- **latency_avg / latency_std** - processing speed stability  
 - and outputs a **verdict** (`stable` or `volatile`)
 
 ---
