@@ -30,12 +30,12 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 
 ---
 
-### 🧩 Model Integration Guide
+###  Model Integration Guide
 
 You can connect **any reasoning model** (local or API-based) to the LCAC Benchmark client.  
 The client simply expects a function that accepts a text prompt and returns a model response.
 
-#### **Option 1 — Local model (Hugging Face / custom)**
+#### **Option 1 - Local model (Hugging Face / custom)**
 
 \```python
 
@@ -48,7 +48,7 @@ def query_model(prompt: str) -> str:
     return model(prompt, max_new_tokens=100)[0]["generated_text"]
 \```
 
-#### **Option 2 — API model (OpenAI / Anthropic / Gemini)**
+#### **Option 2 - API model (OpenAI / Anthropic / Gemini)**
 \```python
 import openai
 
@@ -60,7 +60,7 @@ def query_model(prompt: str) -> str:
     return response["choices"][0]["message"]["content"]
 \```
 
-#### **Option 3 — Framework pipeline (LangChain / LlamaIndex)**
+#### **Option 3 - Framework pipeline (LangChain / LlamaIndex)**
 \```python
 def query_model(prompt: str) -> str:
     return reasoning_chain.invoke(prompt)
