@@ -1,0 +1,29 @@
+# LCAC Institutional Access
+
+This repository supports both **public** and **private** submissions.
+
+##  Public Submission (Preferred)
+1. Fork this repository.  
+2. Add your JSON result to `/results/participants/`.  
+3. Open a Pull Request.
+
+Your model’s metrics will appear on the **LCAC Public Leaderboard** after validation.
+
+##  Private or NDA Submissions
+If your results cannot be published, email them to:
+
+**qstackfield@seedcore.io**
+
+Include:
+- Organization or lab name  
+- Model name / version  
+- Date of benchmark  
+- JSON result file (from `/results/`)  
+
+You will receive a **signed Trust-Index Certificate** after review.
+
+---
+
+**Maintainer:** [@qstackfield](https://github.com/qstackfield)  
+**Organization:** Atom Labs - Vanta Systems  
+**Contact:** qstackfield@seedcore.io
