@@ -68,4 +68,4 @@ Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.
 
 Released under the **LCAC Research License (Academic / Non-Commercial)**.  
 Commercial use, redistribution, or derivative works require prior written approval.  
-Contact: lcac@vanta.systems
+Contact: qstackfield@seedcore.io
