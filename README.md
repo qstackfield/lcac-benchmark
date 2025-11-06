@@ -5,6 +5,9 @@
 It provides a reproducible methodology for testing how well a model maintains logical consistency, contextual alignment, and truth-preserving reasoning over time.
 
 ---
+[![License: LCAC Research](https://img.shields.io/badge/license-LCAC%20Research-blue.svg)](LICENSE)
+[![Benchmark Status](https://img.shields.io/badge/status-open--benchmark-green)](#)
+[![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](#institutional-testing)
 
 ## What It Measures
 
