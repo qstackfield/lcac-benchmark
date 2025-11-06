@@ -223,9 +223,9 @@ Approved institutions receive a **signed Trust-Index Certificate**
 and inclusion in the **LCAC Global Benchmark Leaderboard**.
 ---
 
-# LCAC Participant Submission Template
+## LCAC Participant Submission Template
 
-Please include this information with your submission or Pull Request.
+Please include this information with your Pull Request or Private Submission Issue.
 
 | Field | Description |
 |-------|--------------|
@@ -235,7 +235,6 @@ Please include this information with your submission or Pull Request.
 | **Benchmark Version** | LCAC Benchmark version or Git commit hash |
 | **Result File** | `lcac_benchmark_[timestamp].json` |
 | **Notes / Special Conditions** | Optional comments, hardware details, or runtime context |
-
 ## Citation
 
 If referencing LCAC in academic, research, or commercial work:
