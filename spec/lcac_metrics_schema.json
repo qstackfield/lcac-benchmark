@@ -1,1 +1,61 @@
-
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LCAC Benchmark Metrics Schema",
+  "description": "Schema for LCAC reasoning integrity, drift resistance, and cognitive trust benchmark outputs.",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC ISO-8601 timestamp of benchmark completion."
+    },
+    "model": {
+      "type": "string",
+      "description": "Name or identifier of the model, engine, or reasoning system tested."
+    },
+    "benchmark_version": {
+      "type": "string",
+      "description": "Version of the LCAC benchmark or Git commit hash."
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Benchmark metrics collected from reasoning evaluation cycles.",
+      "properties": {
+        "drift_mean": {
+          "type": "number",
+          "description": "Average drift magnitude across test intervals."
+        },
+        "drift_std": {
+          "type": "number",
+          "description": "Standard deviation of drift across evaluations."
+        },
+        "stability_mean": {
+          "type": "number",
+          "description": "Mean stability score of reasoning output consistency."
+        },
+        "stability_std": {
+          "type": "number",
+          "description": "Standard deviation of stability across tests."
+        },
+        "trust_index": {
+          "type": "number",
+          "description": "Composite trust index combining drift and stability (0–1).",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": ["drift_mean", "stability_mean", "trust_index"]
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["Stable / High Trust", "Moderate Drift", "Unstable / Low Trust"],
+      "description": "Final qualitative assessment of model reasoning integrity."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional metadata or annotations about runtime or context."
+    }
+  },
+  "required": ["timestamp", "model", "metrics", "verdict"],
+  "additionalProperties": false
+}
