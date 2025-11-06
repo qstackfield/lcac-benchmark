@@ -53,7 +53,6 @@ The client simply expects a function that accepts a text prompt and returns a mo
 
 #### **Option 1 - Local model (Hugging Face / custom)**
 \```python
-
 # Edit lcac_benchmark_client.py
 from transformers import pipeline
 
