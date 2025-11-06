@@ -338,6 +338,11 @@ By standardizing cognitive stability metrics, LCAC enables:
 Participants gain a **verifiable reasoning integrity profile**, suitable for citation, internal QA, or public disclosure on the LCAC leaderboard.
 
 ---
+## Community & Submissions
+
+- For questions, use [GitHub Discussions](../../discussions)
+- For public submissions, fork and open a PR
+- For private results, open an issue using the **Private Submission** template
 
 ## Footer
 
