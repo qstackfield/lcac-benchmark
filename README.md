@@ -90,6 +90,14 @@ and inclusion in the **LCAC Global Benchmark Leaderboard**.
 
 ---
 
+## LCAC Participant Submission Template
+- **Organization:**  
+- **Model / Engine Name:**  
+- **Test Date:**  
+- **Benchmark Version:**  
+- **Result File:** `lcac_benchmark_[timestamp].json`
+- **Notes / Special Conditions:**  
+
 ## Citation
 
 If referencing LCAC in academic, research, or commercial work:
