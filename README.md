@@ -111,6 +111,22 @@ If referencing LCAC in academic, research, or commercial work:
 > Vanta Systems. https://github.com/qstackfield/lcac-benchmark
 
 ---
+# Contributing to LCAC Benchmark
+
+Thank you for contributing to the LCAC Benchmark initiative.
+
+### Scope
+LCAC is intended for **academic, research, and institutional integrity testing**.  
+It measures reasoning consistency, drift resistance, and cognitive trust.
+
+### Guidelines
+- Submit reproducible results with clear model identifiers.
+- No proprietary or personal data may be included.
+- If results are confidential, email them to **qstackfield@seedcore.io**.
+- All contributions must align with LCAC Research License terms.
+
+### Reporting Issues
+Open an issue or contact **qstackfield@seedcore.io** for technical or governance inquiries.
 
 ## Footer
 
