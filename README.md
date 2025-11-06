@@ -213,16 +213,14 @@ or start a discussion in [LCAC Discussions](../../discussions).
 
 ## Institutional Testing
 
-To participate in LCAC institutional or enterprise testing:
+For enterprise or institutional evaluations, follow the same submission process described above:
+- Fork this repository  
+- Run your internal reasoning model through the benchmark  
+- Submit via Pull Request or a Private Submission Issue  
 
-1. **Fork this repository** to create your local copy.  
-2. **Run the benchmark suite** against your internal or public reasoning models.  
-3. **Submit your result file** (`lcac_benchmark_[timestamp].json`) via one of the following:
-   - Pull Request to `/results/participants`
-   - or open a **Private Submission Issue**
+Institutions that complete validation receive a **signed Trust-Index Certificate**  
+and are listed on the **LCAC Global Leaderboard**.
 
-Approved institutions receive a **signed Trust-Index Certificate**  
-and inclusion in the **LCAC Global Benchmark Leaderboard**.
 ---
 
 ## LCAC Participant Submission Template
