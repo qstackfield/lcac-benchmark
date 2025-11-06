@@ -73,6 +73,98 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.json)
 
 ---
+---
+
+## 🧠 Developer & Tester Guide
+
+The LCAC Benchmark lets researchers and engineers measure **reasoning drift**, **stability**, and **cognitive integrity** in their own AI systems — safely and reproducibly.
+
+---
+
+### ⚙️ 1. Install Requirements
+
+You only need Python ≥ 3.8 and one dependency:
+
+```bash
+pip install jsonschema
+```
+
+---
+
+### 🚀 2. Run the Benchmark
+
+Run a local benchmark on your reasoning model (or simulation):
+
+```bash
+python3 client/lcac_benchmark_client.py
+```
+
+This creates a result file such as:
+
+```
+results/lcac_benchmark_20251106T150435Z.json
+```
+
+Each run measures:
+- **drift_avg / drift_std** — signal variance across reasoning cycles  
+- **stability_avg / stability_std** — context alignment over time  
+- **latency_avg / latency_std** — processing speed stability  
+- and outputs a **verdict** (`stable` or `volatile`)
+
+---
+
+### 🧩 3. Validate Your Result
+
+Validate your JSON output against the LCAC schema:
+
+```bash
+python3 client/validate_lcac_result.py results/lcac_benchmark_20251106T150435Z.json
+```
+
+If valid, you’ll see:
+
+```
+✅ Validation successful — LCAC result file is valid and complete.
+```
+
+---
+
+### 📤 4. Submit Your Result
+
+Choose one submission path:
+
+**A. Public (recommended)**
+1. Fork this repository  
+2. Add your result JSON to `/results/participants/`  
+3. Open a Pull Request
+
+**B. Private**
+Email your JSON file to **qstackfield@seedcore.io**
+
+Approved participants receive:
+- A **signed LCAC trust-index certificate**  
+- Placement on the LCAC public leaderboard  
+
+---
+
+### 🧾 5. Example Output
+
+```json
+{
+  "timestamp": "2025-11-06T15:04:35Z",
+  "benchmark_version": "1.0-public",
+  "participant_id": "example-lab",
+  "metrics": {
+    "drift_avg": 0.024,
+    "drift_std": 0.009,
+    "stability_avg": 0.983,
+    "stability_std": 0.005,
+    "latency_avg": 0.61,
+    "latency_std": 0.12
+  },
+  "verdict": "stable"
+}
+```
 
 ## License
 
