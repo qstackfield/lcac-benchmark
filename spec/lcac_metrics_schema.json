@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "LCAC Benchmark Metrics Schema",
-  "description": "Schema for LCAC reasoning integrity, drift resistance, and cognitive trust benchmark outputs.",
+  "description": "Official schema for LCAC reasoning integrity, drift resistance, and cognitive trust benchmark outputs.",
   "type": "object",
   "properties": {
     "timestamp": {
@@ -11,19 +11,19 @@
     },
     "model": {
       "type": "string",
-      "description": "Name or identifier of the model, engine, or reasoning system tested."
+      "description": "Name or identifier of the reasoning model, engine, or system tested."
     },
     "participant": {
       "type": "string",
-      "description": "Organization, team, or benchmark participant identifier."
+      "description": "Organization, institution, or benchmark participant identifier."
     },
     "benchmark_version": {
       "type": "string",
-      "description": "Version of the LCAC benchmark or Git commit hash."
+      "description": "Version of the LCAC benchmark suite or Git commit hash."
     },
     "metrics": {
       "type": "object",
-      "description": "Benchmark metrics collected from reasoning evaluation cycles.",
+      "description": "Quantitative reasoning metrics collected from LCAC evaluation cycles.",
       "properties": {
         "drift_mean": {
           "type": "number",
@@ -39,7 +39,7 @@
         },
         "stability_std": {
           "type": "number",
-          "description": "Standard deviation of stability across tests."
+          "description": "Standard deviation of stability across test samples."
         },
         "latency_mean": {
           "type": "number",
@@ -47,7 +47,7 @@
         },
         "latency_std": {
           "type": "number",
-          "description": "Standard deviation of reasoning latency."
+          "description": "Standard deviation of reasoning latency (seconds)."
         },
         "trust_index": {
           "type": "number",
@@ -65,7 +65,7 @@
     },
     "notes": {
       "type": "string",
-      "description": "Optional metadata or annotations about runtime or context."
+      "description": "Optional runtime or environment annotations."
     }
   },
   "required": ["timestamp", "model", "participant", "metrics", "verdict"],
