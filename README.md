@@ -212,15 +212,15 @@ Contact: qstackfield@seedcore.io
 ## Institutional Testing
 
 To participate in LCAC institutional or enterprise testing:
-1. **Fork this repository** to create your local copy.
-2. **Run the benchmark suite** against your internal or public reasoning models.
+
+1. **Fork this repository** to create your local copy.  
+2. **Run the benchmark suite** against your internal or public reasoning models.  
 3. **Submit your result file** (`lcac_benchmark_[timestamp].json`) via one of the following:
    - Pull Request to `/results/participants`
-   - or email **qstackfield@seedcore.io** for private or NDA submissions
+   - or open a **Private Submission Issue**
 
 Approved institutions receive a **signed Trust-Index Certificate**  
 and inclusion in the **LCAC Global Benchmark Leaderboard**.
-
 ---
 
 # LCAC Participant Submission Template
