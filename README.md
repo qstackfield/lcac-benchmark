@@ -21,7 +21,27 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 ## How It Works
 
 1. **Install the client**
-   ```bash
-   git clone https://github.com/qstackfield/lcac-benchmark
-   cd lcac-benchmark/client
-   pip install -r requirements.txt
+
+    ```bash
+    git clone https://github.com/qstackfield/lcac-benchmark
+    cd lcac-benchmark/client
+    pip install -r requirements.txt
+    ```
+
+2. **Run a local benchmark**
+
+    ```bash
+    python3 lcac_benchmark_client.py --model your_model_name
+    ```
+
+3. **View results**
+
+    Results are stored locally in:
+    ```
+    ./results/lcac_benchmark_[timestamp].json
+    ```
+
+4. **(Optional) Submit for validation**
+
+    Upload your JSON file via the [Institutional Access Portal](ACCESS.md)  
+    to receive an official LCAC trust-index signature.
