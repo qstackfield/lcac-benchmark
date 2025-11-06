@@ -16,10 +16,6 @@ logical consistency, contextual alignment, and truth-preserving reasoning over t
 </div>
 
 ---
-[![License: LCAC Research](https://img.shields.io/badge/license-LCAC%20Research-blue.svg)](LICENSE)
-[![Benchmark Status](https://img.shields.io/badge/status-open--benchmark-green)](#)
-[![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](#institutional-testing)
-
 ## What It Measures
 
 | Dimension | Description |
