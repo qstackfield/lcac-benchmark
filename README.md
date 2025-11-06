@@ -271,7 +271,7 @@ If referencing LCAC in academic, research, or commercial work:
 ┌────────────────────────────┐
 │ Submission Path            │
 │   Public PR → /participants│
-│   Private email → review   │
+│   Private Issue → review   │
 └─────────────┬──────────────┘
               │
               ▼
