@@ -47,11 +47,18 @@ def validate_result(result_path):
         sys.exit(1)
 
 if __name__ == "__main__":
+    results_dir = pathlib.Path("results")
+    files = sorted(results_dir.glob("lcac_benchmark_*.json"))
     if len(sys.argv) < 2:
-        print("Usage: python3 validate_lcac_result.py <result_file.json>")
-        sys.exit(1)
+        if files:
+            result_path = files[-1]
+            print(f"[i] No file provided — validating latest: {result_path}")
+        else:
+            print("[✗] No LCAC result files found in results/")
+            sys.exit(1)
+    else:
+        result_path = pathlib.Path(sys.argv[1])
 
-    result_path = pathlib.Path(sys.argv[1])
     if not result_path.exists():
         print(f"[✗] File not found: {result_path}")
         sys.exit(1)
