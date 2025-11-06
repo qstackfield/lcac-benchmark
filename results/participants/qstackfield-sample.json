@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-11-06T20:49:15.779874+00:00",
+  "model": "example-model-v1",
+  "benchmark_version": "v1.0.0",
+  "metrics": {
+    "drift_mean": 0.0191,
+    "drift_std": 0.0094,
+    "stability": 0.9714,
+    "trust_index": 0.953
+  },
+  "verdict": "Stable / High Trust"
+}
