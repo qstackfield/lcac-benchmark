@@ -77,7 +77,7 @@ Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.
 
 ## 🧠 Developer & Tester Guide
 
-The LCAC Benchmark lets researchers and engineers measure **reasoning drift**, **stability**, and **cognitive integrity** in their own AI systems — safely and reproducibly.
+The LCAC Benchmark lets researchers and engineers measure **reasoning drift**, **stability**, and **cognitive integrity** in their own AI systems - safely and reproducibly.
 
 ---
 
