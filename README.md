@@ -29,24 +29,9 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 
 ---
 
-## How It Works
-
-1. **Install the client**
-
-    ```bash
-    git clone https://github.com/qstackfield/lcac-benchmark
-    cd lcac-benchmark/client
-    pip install -r requirements.txt
-    ```
-
-2. **Run a local benchmark**
-
-    ```bash
-    python3 lcac_benchmark_client.py --model your_model_name
-    ```
 ---
 
-### Model Integration Guide
+### 🧩 Model Integration Guide
 
 You can connect **any reasoning model** (local or API-based) to the LCAC Benchmark client.  
 The client simply expects a function that accepts a text prompt and returns a model response.
