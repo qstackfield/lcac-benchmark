@@ -243,7 +243,7 @@ Please include this information with your Pull Request or Private Submission Iss
 If referencing LCAC in academic, research, or commercial work:
 
 > Stackfield, Q. (2025). *LCAC: A Cognitive Integrity Benchmark for Reasoning Systems.*  
-> Vanta Systems. https://github.com/qstackfield/lcac-benchmark
+> LCAC Research | Atom Labs. https://github.com/qstackfield/lcac-benchmark
 
 ---
 
