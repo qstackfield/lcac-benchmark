@@ -75,13 +75,13 @@ Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.
 ---
 ---
 
-## 🧠 Developer & Tester Guide
+## Developer & Tester Guide
 
 The LCAC Benchmark lets researchers and engineers measure **reasoning drift**, **stability**, and **cognitive integrity** in their own AI systems - safely and reproducibly.
 
 ---
 
-### ⚙️ 1. Install Requirements
+### 1. Install Requirements
 
 You only need Python ≥ 3.8 and one dependency:
 
@@ -91,7 +91,7 @@ pip install jsonschema
 
 ---
 
-### 🚀 2. Run the Benchmark
+### 2. Run the Benchmark
 
 Run a local benchmark on your reasoning model (or simulation):
 
@@ -113,7 +113,7 @@ Each run measures:
 
 ---
 
-### 🧩 3. Validate Your Result
+### 3. Validate Your Result
 
 Validate your JSON output against the LCAC schema:
 
@@ -129,7 +129,7 @@ If valid, you’ll see:
 
 ---
 
-### 📤 4. Submit Your Result
+### 4. Submit Your Result
 
 Choose one submission path:
 
@@ -147,7 +147,7 @@ Approved participants receive:
 
 ---
 
-### 🧾 5. Example Output
+### 5. Example Output
 
 ```json
 {
