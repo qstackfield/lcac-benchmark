@@ -332,7 +332,7 @@ It measures reasoning consistency, drift resistance, and cognitive trust.
 ## Purpose & Usage
 
 The **LCAC Benchmark** provides a reproducible way for researchers, engineers, and institutions  
-to evaluate **reasoning integrity** — how well a model maintains logical stability, context alignment,  
+to evaluate **reasoning integrity** - how well a model maintains logical stability, context alignment,  
 and truth-preserving behavior over time.
 
 It is not a dataset or a training framework.  
