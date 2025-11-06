@@ -69,3 +69,33 @@ Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.
 Released under the **LCAC Research License (Academic / Non-Commercial)**.  
 Commercial use, redistribution, or derivative works require prior written approval.  
 Contact: qstackfield@seedcore.io
+
+## 🧪 Institutional Testing
+
+To participate in LCAC institutional or enterprise testing:
+1. **Fork this repository** to create your local copy.
+2. **Run the benchmark suite** against your internal or public reasoning models.
+3. **Submit your result file** (`lcac_benchmark_[timestamp].json`) via one of the following:
+   - Pull Request to `/results/participants`
+   - or email **qstackfield@seedcore.io** for private or NDA submissions
+
+Approved institutions receive a **signed Trust-Index Certificate**  
+and inclusion in the **LCAC Global Benchmark Leaderboard**.
+
+---
+
+## 🧾 Citation
+
+If referencing LCAC in academic, research, or commercial work:
+
+> Stackfield, Q. (2025). *LCAC: A Cognitive Integrity Benchmark for Reasoning Systems.*  
+> Vanta Systems. https://github.com/qstackfield/lcac-benchmark
+
+---
+
+## 🧭 Footer
+
+**Maintainer:** [@qstackfield](https://github.com/qstackfield)  
+**Organization:** Vanta Systems  
+**Contact:** qstackfield@seedcore.io  
+**Website:** https://vanta.systems
