@@ -37,6 +37,7 @@ You can connect **any reasoning model** (local or API-based) to the LCAC Benchma
 The client simply expects a function that accepts a text prompt and returns a model response.
 
 #### **Option 1 — Local model (Hugging Face / custom)**
+
 \```python
 # Edit lcac_benchmark_client.py
 from transformers import pipeline
