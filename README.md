@@ -269,7 +269,7 @@ Participants gain a **verifiable reasoning integrity profile**, suitable for cit
 ## Footer
 
 **Maintainer:** [@qstackfield](https://github.com/qstackfield)  
-**Organization:** Vanta Systems  
+**Organization:** Atom Labs - LCAC Research Division 
 **Contact:** qstackfield@seedcore.io  
 
 
