@@ -254,8 +254,8 @@ It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, 
 
 ### Why It Matters
 
-LCAC is part of an emerging integrity layer for AI —  
-a neutral benchmark for **reasoning governance**.  
+LCAC is part of an emerging integrity layer for AI. 
+A neutral benchmark for **reasoning governance**.  
 By standardizing cognitive stability metrics, LCAC enables:
 
 - Transparent comparison between reasoning systems  
@@ -265,9 +265,6 @@ By standardizing cognitive stability metrics, LCAC enables:
 Participants gain a **verifiable reasoning integrity profile**, suitable for citation, internal QA, or public disclosure on the LCAC leaderboard.
 
 ---
-
-### Reporting Issues
-Open an issue or contact **qstackfield@seedcore.io** for technical or governance inquiries.
 
 ## Footer
 
