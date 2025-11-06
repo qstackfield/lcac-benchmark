@@ -27,7 +27,6 @@ logical consistency, contextual alignment, and truth-preserving reasoning over t
 
 LCAC defines a unified metric schema and test protocol so that models, reasoning engines, or governance systems can be benchmarked using the same standard.
 
----
 
 ---
 
@@ -39,6 +38,7 @@ The client simply expects a function that accepts a text prompt and returns a mo
 #### **Option 1 — Local model (Hugging Face / custom)**
 
 \```python
+
 # Edit lcac_benchmark_client.py
 from transformers import pipeline
 
