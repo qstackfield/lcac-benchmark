@@ -52,7 +52,6 @@ You can connect **any reasoning model** (local or API-based) to the LCAC Benchma
 The client simply expects a function that accepts a text prompt and returns a model response.
 
 #### **Option 1 - Local model (Hugging Face / custom)**
-
 \```python
 
 # Edit lcac_benchmark_client.py
@@ -61,8 +60,7 @@ from transformers import pipeline
 model = pipeline("text-generation", model="gpt2")
 
 def query_model(prompt: str) -> str:
-    return model(prompt, max_new_tokens=100)[0]["generated_text"]
-    
+    return model(prompt, max_new_tokens=100)[0]["generated_text"]    
 \```
 
 #### **Option 2 - API model (OpenAI / Anthropic / Gemini)**
@@ -94,6 +92,7 @@ results/lcac_benchmark_20251106T190000Z.json
 \```
 
 ---
+
 3. **View results**
 
     Results are stored locally in:
