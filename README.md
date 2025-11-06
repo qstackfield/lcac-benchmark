@@ -124,7 +124,7 @@ python3 client/validate_lcac_result.py results/lcac_benchmark_20251106T150435Z.j
 If valid, you’ll see:
 
 ```
-✅ Validation successful — LCAC result file is valid and complete.
+✅ Validation successful - LCAC result file is valid and complete.
 ```
 
 ---
