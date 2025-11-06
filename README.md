@@ -371,11 +371,7 @@ You can use **GitHub Discussions** to ask questions, share results, or collabora
 ---
 
 **Maintainer:** [@qstackfield](https://github.com/qstackfield)  
-**Organization:** Atom Labs - LCAC Research Division  
-**Contact:** qstackfield@seedcore.io
-## Footer
-
-**Maintainer:** [@qstackfield](https://github.com/qstackfield)  
 **Organization:** Atom Labs - LCAC Research Division 
-**Contact:** qstackfield@seedcore.io  
+**Contact:** For submissions or support, please use [LCAC Discussions](../../discussions)
+or open a **Private Submission Issue** in this repository.
 
