@@ -45,3 +45,27 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
 
     Upload your JSON file via the [Institutional Access Portal](ACCESS.md)  
     to receive an official LCAC trust-index signature.
+
+   ## Output Schema (Simplified)
+
+{
+  "timestamp": "2025-11-06T15:00:00Z",
+  "model": "example-model-v1",
+  "metrics": {
+    "drift_mean": 0.031,
+    "drift_std": 0.004,
+    "stability": 0.982,
+    "trust_index": 0.941
+  },
+  "verdict": "Stable / High Trust"
+}
+
+Full schema reference: [spec/lcac_metrics_schema.json](spec/lcac_metrics_schema.json)
+
+---
+
+## License
+
+Released under the **LCAC Research License (Academic / Non-Commercial)**.  
+Commercial use, redistribution, or derivative works require prior written approval.  
+Contact: lcac@vanta.systems
