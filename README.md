@@ -70,7 +70,7 @@ Released under the **LCAC Research License (Academic / Non-Commercial)**.
 Commercial use, redistribution, or derivative works require prior written approval.  
 Contact: qstackfield@seedcore.io
 
-## 🧪 Institutional Testing
+## Institutional Testing
 
 To participate in LCAC institutional or enterprise testing:
 1. **Fork this repository** to create your local copy.
@@ -84,7 +84,7 @@ and inclusion in the **LCAC Global Benchmark Leaderboard**.
 
 ---
 
-## 🧾 Citation
+## Citation
 
 If referencing LCAC in academic, research, or commercial work:
 
@@ -98,4 +98,3 @@ If referencing LCAC in academic, research, or commercial work:
 **Maintainer:** [@qstackfield](https://github.com/qstackfield)  
 **Organization:** Vanta Systems  
 **Contact:** qstackfield@seedcore.io  
-**Website:** https://vanta.systems
