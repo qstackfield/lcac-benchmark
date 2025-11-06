@@ -230,6 +230,46 @@ The **LCAC Benchmark** provides a reproducible way for researchers, engineers, a
 It is not a dataset or a training framework.  
 It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, *cognitive trust*, and *context retention* using standardized metrics.
 
+---
+
+## Benchmark Architecture Overview
+
+```
+┌────────────────────────────┐
+│    Participant Model / AI  │
+│   (reasoning engine under  │
+│       evaluation)          │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ LCAC Benchmark Client      │
+│ - Runs drift & stability   │
+│ - Outputs JSON metrics     │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ Schema Validator           │
+│ - Ensures JSON compliance  │
+│ - Confirms trust index     │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ Submission Path            │
+│ - Public PR → /participants│
+│ - Private email → review   │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│ LCAC Leaderboard Generator │
+│ - Aggregates verified runs │
+│ - Publishes Trust Index    │
+└────────────────────────────┘
+```
+
 ### How Participants Use It
 
 1. **Run Locally**  
@@ -271,44 +311,4 @@ Participants gain a **verifiable reasoning integrity profile**, suitable for cit
 **Maintainer:** [@qstackfield](https://github.com/qstackfield)  
 **Organization:** Atom Labs - LCAC Research Division 
 **Contact:** qstackfield@seedcore.io  
-
----
-
-## Benchmark Architecture Overview
-
-```text
-┌────────────────────────────┐
-│    Participant Model / AI  │
-│   (reasoning engine under  │
-│       evaluation)          │
-└─────────────┬──────────────┘
-              │
-              ▼
-┌────────────────────────────┐
-│ LCAC Benchmark Client      │
-│ - Runs drift & stability   │
-│ - Outputs JSON metrics     │
-└─────────────┬──────────────┘
-              │
-              ▼
-┌────────────────────────────┐
-│ Schema Validator           │
-│ - Ensures JSON compliance  │
-│ - Confirms trust index     │
-└─────────────┬──────────────┘
-              │
-              ▼
-┌────────────────────────────┐
-│ Submission Path            │
-│ - Public PR → /participants│
-│ - Private email → review   │
-└─────────────┬──────────────┘
-              │
-              ▼
-┌────────────────────────────┐
-│ LCAC Leaderboard Generator │
-│ - Aggregates verified runs │
-│ - Publishes Trust Index    │
-└────────────────────────────┘
-
 
