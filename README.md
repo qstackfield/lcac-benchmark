@@ -44,7 +44,53 @@ LCAC defines a unified metric schema and test protocol so that models, reasoning
     ```bash
     python3 lcac_benchmark_client.py --model your_model_name
     ```
+---
 
+### 🧩 Model Integration Guide
+
+You can connect **any reasoning model** (local or API-based) to the LCAC Benchmark client.  
+The client simply expects a function that accepts a text prompt and returns a model response.
+
+#### **Option 1 — Local model (Hugging Face / custom)**
+\```python
+# Edit lcac_benchmark_client.py
+from transformers import pipeline
+
+model = pipeline("text-generation", model="gpt2")
+
+def query_model(prompt: str) -> str:
+    return model(prompt, max_new_tokens=100)[0]["generated_text"]
+\```
+
+#### **Option 2 — API model (OpenAI / Anthropic / Gemini)**
+\```python
+import openai
+
+def query_model(prompt: str) -> str:
+    response = openai.ChatCompletion.create(
+        model="gpt-4-turbo",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response["choices"][0]["message"]["content"]
+\```
+
+#### **Option 3 — Framework pipeline (LangChain / LlamaIndex)**
+\```python
+def query_model(prompt: str) -> str:
+    return reasoning_chain.invoke(prompt)
+\```
+
+Once this function is defined, the LCAC client automatically:
+- Runs multi-cycle reasoning tests  
+- Calculates drift, stability, and trust metrics  
+- Writes a result file under `results/`
+
+Example output:
+\```
+results/lcac_benchmark_20251106T190000Z.json
+\```
+
+---
 3. **View results**
 
     Results are stored locally in:
