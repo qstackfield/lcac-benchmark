@@ -243,14 +243,6 @@ If referencing LCAC in academic, research, or commercial work:
 > Stackfield, Q. (2025). *LCAC: A Cognitive Integrity Benchmark for Reasoning Systems.*  
 > Vanta Systems. https://github.com/qstackfield/lcac-benchmark
 
-
-## Purpose & Usage
-
-The **LCAC Benchmark** provides a reproducible way for researchers, engineers, and institutions to **evaluate reasoning integrity** - how well a model maintains logical stability, context alignment, and truth-preserving behavior over time.
-
-It is not a dataset or a training framework.  
-It is a **governance-grade diagnostic**, designed to measure *reasoning drift*, *cognitive trust*, and *context retention* using standardized metrics.
-
 ---
 
 ## Benchmark Architecture Overview
