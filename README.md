@@ -166,17 +166,21 @@ If valid, you’ll see:
 
 Choose one submission path:
 
-**A. Public (recommended)**
+**A. Public (recommended)**  
 1. Fork this repository  
 2. Add your result JSON to `/results/participants/`  
-3. Open a Pull Request
+3. Open a Pull Request  
 
-**B. Private**
-Email your JSON file to **qstackfield@seedcore.io**
+**B. Private (confidential / NDA)**  
+Open a **Private Submission Issue** in this repository and include:  
+- Organization or lab name  
+- Model name / version  
+- Date of benchmark  
+- SHA-256 hash of your result file  
 
-Approved participants receive:
-- A **signed LCAC trust-index certificate**  
-- Placement on the LCAC public leaderboard  
+Approved participants receive:  
+- A **signed LCAC Trust-Index Certificate**  
+- Placement on the **LCAC Public Leaderboard** after validation
 
 ---
 
