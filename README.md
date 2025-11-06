@@ -93,7 +93,7 @@ If referencing LCAC in academic, research, or commercial work:
 
 ---
 
-## 🧭 Footer
+## Footer
 
 **Maintainer:** [@qstackfield](https://github.com/qstackfield)  
 **Organization:** Vanta Systems  
