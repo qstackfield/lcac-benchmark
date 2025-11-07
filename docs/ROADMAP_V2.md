@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Core Framework Upgrades
+## 1. Core Framework Upgrades ##
 
 Focus: **stability, reproducibility, automation**
 
